@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Invitation For Sweety</title>
-    <!-- Google Fonts for Stylish Writing -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Linking External CSS -->
+    <title>A Special Invitation for Sweety ❤️</title>
+    
+    <!-- Google Fonts for Romantic Styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main Envelope Unit -->
-    <div class="envelope-wrapper" id="envelope">
-        <div class="open-btn">OPEN</div>
-        <div class="envelope-pocket"></div>
-        
-        <!-- Inside Card -->
-        <div class="card">
-            <div>
-                <h1>Invitation</h1>
-                <h3>For upcoming date</h3>
-            </div>
-            
-            <div class="details">
-                <p><span>From:</span> Mehedi Hasan Tusar</p>
-                <p><span>To:</span> Sweety</p>
-                <p><span>Date:</span> 13-08-2026</p>
-                <p><span>Time:</span> 3:00 pm</p>
-                <p><span>Location:</span> Lapino</p>
-            </div>
+    <!-- Background Music -->
+    <!-- Note: Paste a romantic mp3 file link in the src below or keep a local music.mp3 file -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
 
-            <p class="closing-text">
-                Waiting for you... ❤️
-            </p>
+    <div class="wrapper">
+        <div class="envelope-wrapper" id="envelope">
+            <!-- Envelope Flap & Body -->
+            <div class="lid one"></div>
+            <div class="lid two"></div>
+            <div class="envelope-body"></div>
+            
+            <!-- Open Button on Envelope -->
+            <button class="open-btn" id="openBtn">Open Envelope ✨</button>
+
+            <!-- Floating Hearts Inside Envelope -->
+            <div class="card">
+                <div class="card-content">
+                    <h1 class="title">Invitation</h1>
+                    <p class="subtitle">For an upcoming date ❤️</p>
+                    
+                    <div class="details">
+                        <p><strong>From:</strong> Mehedi Hasan Tusar</p>
+                        <p><strong>To:</strong> Sweety</p>
+                        <p class="highlight"><strong>Date:</strong> 13-08-2026</p>
+                        <p class="highlight"><strong>Time:</strong> 3:00 PM</p>
+                        <p><strong>Location:</strong> Lapino</p>
+                    </div>
+
+                    <div class="footer-note">
+                        Can't wait to see you! 💕
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Soft Instrumental Music -->
-    <audio id="bg-music" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-    <button class="music-btn" onclick="toggleMusic()">🎵 Toggle Music</button>
-
-    <!-- Linking External JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
